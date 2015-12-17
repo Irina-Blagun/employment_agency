@@ -6,7 +6,7 @@
         '        If TextBox1.Text.Length < 3 Or TextBox2.Text.Length = 0 Or ComboBox1.Text = "" Then
         '            MsgBox("Логин или пароль введены неверно")
         '        ElseIf SQL.HasConnection And SQL.Autorization(TextBox1.Text & ComboBox1.Text, TextBox2.Text) Then
-        Form2.Show()
+        'Form2.Show()
         '            Me.Hide()
         '        End If
     End Sub
