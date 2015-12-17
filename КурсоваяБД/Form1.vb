@@ -7,7 +7,7 @@
         '            MsgBox("Логин или пароль введены неверно")
         '        ElseIf SQL.HasConnection And SQL.Autorization(TextBox1.Text & ComboBox1.Text, TextBox2.Text) Then
         'Form2.Show()
-        '            Me.Hide()
+        Me.Hide()
         '        End If
     End Sub
 
