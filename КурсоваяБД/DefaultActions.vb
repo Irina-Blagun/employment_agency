@@ -22,33 +22,33 @@ Public Class DefaultActions
 
     Public Sub UpdateDataset()
         Try
-            GlobalVariables.SQL.SQLCon.Open()
+            SQLControl.SQLCon.Open()
 
-            SQLCmd = New SqlCommand(TableQueryDefault, GlobalVariables.SQL.SQLCon)
+            SQLCmd = New SqlCommand(TableQueryDefault, SQLControl.SQLCon)
             SQLDA = New SqlDataAdapter(SQLCmd)
             SQLDataset = New DataSet
             SQLDA.Fill(SQLDataset)
 
-            GlobalVariables.SQL.SQLCon.Close()
+            SQLControl.SQLCon.Close()
 
             If SQLDataset.Tables.Count > 0 Then
                 Table.DataSource = SQLDataset.Tables(0)
             End If
         Catch ex As Exception
-            GlobalVariables.SQL.SQLCon.Close()
+            SQLControl.SQLCon.Close()
         End Try
     End Sub
 
     Public Sub RunQueryAndUpdate(Query As String, SuccessMsg As String, ErrorMsg As String)
         Try
-            GlobalVariables.SQL.SQLCon.Open()
-            SQLCmd = New SqlCommand(Query, GlobalVariables.SQL.SQLCon)
+            SQLControl.SQLCon.Open()
+            SQLCmd = New SqlCommand(Query, SQLControl.SQLCon)
             SQLCmd.ExecuteNonQuery()
-            GlobalVariables.SQL.SQLCon.Close()
+            SQLControl.SQLCon.Close()
 
             MsgBox(SuccessMsg)
         Catch ex As Exception
-            GlobalVariables.SQL.SQLCon.Close()
+            SQLControl.SQLCon.Close()
             MsgBox(ErrorMsg & "', ['" & ex.Message & "']'")
         Finally
             Me.updateDataset()
