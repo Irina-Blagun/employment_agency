@@ -5,7 +5,6 @@
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Employer = New Employer(DataGridView1)
         Vacancy = New Vacancy(DataGridView2)
-        MsgBox("jbhjvgfcgd")
     End Sub
 
     'КНОПКА ДОБАВЛЕНИЯ РАБОТОДАТЕЛЯ
