@@ -8,6 +8,7 @@
         '        ElseIf SQL.HasConnection And SQL.Autorization(TextBox1.Text & ComboBox1.Text, TextBox2.Text) Then
         Form2.Show()
         MsgBox("iyguktfjy")
+        MsgBox("iyguktfjy")
         '            Me.Hide()
         '        End If
     End Sub
