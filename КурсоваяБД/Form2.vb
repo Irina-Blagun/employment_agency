@@ -5,14 +5,62 @@
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Employer = New Employer(DataGridView1)
         Vacancy = New Vacancy(DataGridView2)
+
+        Dim MeW As Integer = Me.Width / 2
+        Dim MeH As Integer = Me.Height / 2
+
+        RerenderPanels()
+    End Sub
+
+    Public Sub RerenderPanels()
+
+        ' HEADER
+        Panel4.Top = 0
+        Panel4.Left = 0
+        Panel4.Width = Me.Width
+        Panel4.Height = 60
+
+        'SIDERBAR
+        Panel5.Top = Panel4.Height
+        Panel5.Left = 0
+        Panel5.Height = Me.Height - Panel4.Height
+        Panel5.Width = 260
+
+        'CONTENT
+
+        Panel1.Left = Panel5.Width + 20
+        Panel1.Top = Panel4.Height + 20
+        Panel1.Height = Me.Height - Panel4.Height - 75
+        Panel1.Width = Me.Width - Panel5.Width - 50
+
+        ' TABLE
+        DataGridView1.Left = 20
+        DataGridView1.Top = 80
+        DataGridView1.Width = Panel1.Width - 40
+        DataGridView1.Height = (Panel1.Height - 80) * 0.4
+
+        ' TABLE
+        PictureBox5.Top = 80 + DataGridView1.Height + 20
+        PictureBox6.Top = 80 + DataGridView1.Height + 20
+        PictureBox7.Top = 80 + DataGridView1.Height + 20
+        DataGridView2.Left = 20
+        DataGridView2.Top = DataGridView1.Height + 80 + 80
+        DataGridView2.Width = Panel1.Width - 40
+        DataGridView2.Height = ((Panel1.Height - 80) * 0.6) - 40 - 80
+
+
+
+
     End Sub
 
     'КНОПКА ДОБАВЛЕНИЯ РАБОТОДАТЕЛЯ
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Panel2.Visible = Not Panel2.Visible
-        PictureBox4.Visible = True
-        PictureBox10.Visible = False
+
+        Form3.Show()
+        'Panel2.Visible = Not Panel2.Visible
+        'PictureBox4.Visible = True
+        'PictureBox10.Visible = False
     End Sub
 
     'КНОПКА ИЗМЕНЕНИЯ РАБОТОДАТЕЛЯ
@@ -82,8 +130,11 @@
         Vacancy.Delete()
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        PictureBox5.Visible = True
-        TextBox2.Text = DataGridView1.SelectedRows(0).Cells(1).Value.ToString
+    Private Sub PictureBox9_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Form2_ResizeBegin(sender As Object, e As EventArgs) Handles MyBase.ResizeBegin
+        RerenderPanels()
     End Sub
 End Class

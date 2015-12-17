@@ -40,8 +40,6 @@ Partial Class Form2
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
@@ -55,6 +53,8 @@ Partial Class Form2
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,25 +67,27 @@ Partial Class Form2
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(30, 92)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(961, 228)
         Me.DataGridView1.TabIndex = 0
         '
         'DataGridView2
         '
+        Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Location = New System.Drawing.Point(30, 407)
         Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.ReadOnly = True
         Me.DataGridView2.RowTemplate.Height = 24
         Me.DataGridView2.Size = New System.Drawing.Size(961, 415)
         Me.DataGridView2.TabIndex = 1
@@ -132,7 +134,7 @@ Partial Class Form2
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackColor = System.Drawing.Color.Green
         Me.Panel1.Controls.Add(Me.PictureBox5)
         Me.Panel1.Controls.Add(Me.PictureBox6)
         Me.Panel1.Controls.Add(Me.PictureBox7)
@@ -141,7 +143,7 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me.DataGridView2)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(141, 12)
+        Me.Panel1.Location = New System.Drawing.Point(234, 112)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1021, 852)
         Me.Panel1.TabIndex = 8
@@ -154,7 +156,6 @@ Partial Class Form2
         Me.PictureBox5.Size = New System.Drawing.Size(100, 50)
         Me.PictureBox5.TabIndex = 11
         Me.PictureBox5.TabStop = False
-        Me.PictureBox5.Visible = False
         '
         'PictureBox6
         '
@@ -204,7 +205,7 @@ Partial Class Form2
         Me.Panel2.Controls.Add(Me.PictureBox4)
         Me.Panel2.Controls.Add(Me.TextBox3)
         Me.Panel2.Controls.Add(Me.TextBox4)
-        Me.Panel2.Location = New System.Drawing.Point(1179, 12)
+        Me.Panel2.Location = New System.Drawing.Point(1373, 106)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(221, 300)
         Me.Panel2.TabIndex = 10
@@ -247,24 +248,6 @@ Partial Class Form2
         Me.CheckedListBox1.Size = New System.Drawing.Size(139, 157)
         Me.CheckedListBox1.TabIndex = 10
         '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PictureBox8.Location = New System.Drawing.Point(12, 33)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox8.TabIndex = 11
-        Me.PictureBox8.TabStop = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.PictureBox9.Location = New System.Drawing.Point(12, 104)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox9.TabIndex = 12
-        Me.PictureBox9.TabStop = False
-        '
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.TextBox7)
@@ -280,7 +263,7 @@ Partial Class Form2
         Me.Panel3.Controls.Add(Me.ComboBox2)
         Me.Panel3.Controls.Add(Me.TextBox5)
         Me.Panel3.Controls.Add(Me.TextBox2)
-        Me.Panel3.Location = New System.Drawing.Point(1179, 338)
+        Me.Panel3.Location = New System.Drawing.Point(1350, 412)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(416, 622)
         Me.Panel3.TabIndex = 13
@@ -386,14 +369,30 @@ Partial Class Form2
         Me.TextBox2.Size = New System.Drawing.Size(245, 22)
         Me.TextBox2.TabIndex = 0
         '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Panel4.Location = New System.Drawing.Point(1, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(1626, 89)
+        Me.Panel4.TabIndex = 14
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.SystemColors.GrayText
+        Me.Panel5.Location = New System.Drawing.Point(1, 85)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(190, 820)
+        Me.Panel5.TabIndex = 15
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1674, 1011)
+        Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.PictureBox9)
-        Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form2"
@@ -412,8 +411,6 @@ Partial Class Form2
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
@@ -433,8 +430,6 @@ Partial Class Form2
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
     Friend WithEvents CheckedListBox1 As System.Windows.Forms.CheckedListBox
     Friend WithEvents MaskedTextBox1 As System.Windows.Forms.MaskedTextBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
@@ -452,4 +447,6 @@ Partial Class Form2
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel5 As Panel
 End Class
