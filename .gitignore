@@ -155,3 +155,4 @@ $RECYCLE.BIN/
 # Mac desktop service store files
 .DS_Store
 КурсоваяБД/SQLControl.vb
+КурсоваяБД/DefaultClasses/SQLControl.vb
