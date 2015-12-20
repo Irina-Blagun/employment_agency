@@ -85,8 +85,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DefaultActions.vb" />
-    <Compile Include="Employer.vb" />
+    <Compile Include="DefaultClasses\DependentActions.vb" />
+    <Compile Include="DefaultClasses\BasicActions.vb" />
+    <Compile Include="EmployerAndVacancy\Classes\Employer.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -94,22 +95,17 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="EmployerAndVacancy\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="EmployerAndVacancy\Main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="EmployerAndVacancy\EmployerManage.Designer.vb">
+      <DependentUpon>EmployerManage.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="EmployerAndVacancy\EmployerManage.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="loginpasswordDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>loginpasswordDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -126,20 +122,26 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="SMTPControl.vb" />
-    <Compile Include="SQLControl.vb" />
+    <Compile Include="DefaultClasses\SMTPControl.vb" />
+    <Compile Include="DefaultClasses\SQLControl.vb" />
     <Compile Include="User.vb" />
-    <Compile Include="Vacancy.vb" />
+    <Compile Include="EmployerAndVacancy\Classes\Vacancy.vb" />
+    <Compile Include="EmployerAndVacancy\VacancyManage.Designer.vb">
+      <DependentUpon>VacancyManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployerAndVacancy\VacancyManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="EmployerAndVacancy\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="EmployerAndVacancy\EmployerManage.resx">
+      <DependentUpon>EmployerManage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -147,19 +149,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployerAndVacancy\VacancyManage.resx">
+      <DependentUpon>VacancyManage.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="loginpasswordDataSet.xsc">
-      <DependentUpon>loginpasswordDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="loginpasswordDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>loginpasswordDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="loginpasswordDataSet.xss">
-      <DependentUpon>loginpasswordDataSet.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -170,15 +164,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="loginpassword.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="loginpassword_log.ldf">
-      <DependentUpon>loginpassword.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -192,6 +177,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
