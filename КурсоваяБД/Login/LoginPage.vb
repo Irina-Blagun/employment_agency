@@ -1,6 +1,6 @@
 ﻿Public Class LoginPage
     Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        If User.Login(TextBox1.Text & ComboBox1.Text, TextBox2.Text) Then
+        If User.Login(TextBox1.Text, TextBox2.Text) Then
             Me.Hide()
             Main.Show()
 
@@ -35,6 +35,22 @@
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         Panel2.Visible = False
         Panel1.Visible = True
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+
     End Sub
 End Class
 

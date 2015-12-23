@@ -56,11 +56,11 @@ Public Class DependentActions
     End Sub
 
 
-    Public Sub SearchTable(Text As String)
+    Public Sub SearchTable()
         Dim a As Boolean = False
         Dim Row As DataGridViewRow
+        Dim Text As String = InputBox("Введите ключевое слово", "Поиск")
         For Each Row In Table.Rows
-
             For index As Integer = 0 To Row.Cells.Count - 1
                 If (Row.Cells(index).Value.ToString().Contains(Text)) Then
                     Table.CurrentCell = Row.Cells(1)

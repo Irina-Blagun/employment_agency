@@ -152,7 +152,7 @@
     <Compile Include="selection\MainSelection.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SQLControlvb.vb" />
+    <Compile Include="DefaultClasses\SQLControlvb.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Login\LoginPage.resx">
@@ -210,7 +210,60 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Rectangle 1 + Войти.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 1 + Войти1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\АВТОРИЗАЦИЯ + Для сотрудников комп.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfghj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qwe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\СОИСКАТЕЛЬ + Соискать, резюме.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esfdghj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trdfsh213.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

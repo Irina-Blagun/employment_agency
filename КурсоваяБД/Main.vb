@@ -52,7 +52,6 @@
         PictureBox7.Top = 80 + DataGridView1.Height + 20
         PictureBox16.Top = 80 + DataGridView1.Height + 20
         PictureBox18.Top = 80 + DataGridView1.Height + 20
-        TextBox4.Top = 80 + DataGridView1.Height + 20
 
 
         DataGridView2.Left = 20
@@ -80,7 +79,6 @@
         PictureBox14.Top = 80 + DataGridView1.Height + 20
         PictureBox15.Top = 80 + DataGridView1.Height + 20
         PictureBox20.Top = 80 + DataGridView1.Height + 20
-        TextBox2.Top = 80 + DataGridView1.Height + 20
 
 
 
@@ -198,18 +196,29 @@
     End Sub
 
     Private Sub PictureBox17_Click(sender As Object, e As EventArgs) Handles PictureBox17.Click
-        Employer.SearchTable(TextBox3.Text)
+        Employer.SearchTable()
     End Sub
 
     Private Sub PictureBox18_Click(sender As Object, e As EventArgs) Handles PictureBox18.Click
-        Vacancy.SearchTable(TextBox4.Text)
+        Vacancy.SearchTable()
     End Sub
 
     Private Sub PictureBox19_Click(sender As Object, e As EventArgs) Handles PictureBox19.Click
-        Seeker.SearchTable(TextBox1.Text)
+        Seeker.SearchTable()
     End Sub
 
     Private Sub PictureBox20_Click(sender As Object, e As EventArgs) Handles PictureBox20.Click
-        Resumes.SearchTable(TextBox2.Text)
+        Resumes.SearchTable()
+    End Sub
+
+    Private Sub Main_FormClosed(sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
+        Select Case MsgBox("Вы действительно хотите выйти из программы?", MsgBoxStyle.YesNo, "Выход")
+            Case MsgBoxResult.Yes
+                LoginPage.Close()
+            Case MsgBoxResult.Cancel
+                e.Cancel = True
+            Case MsgBoxResult.No
+                e.Cancel = True
+        End Select
     End Sub
 End Class
