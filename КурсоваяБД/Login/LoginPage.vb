@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class LoginPage
     Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles PictureBox1.Click
         If User.Login(TextBox1.Text & ComboBox1.Text, TextBox2.Text) Then
             Me.Hide()

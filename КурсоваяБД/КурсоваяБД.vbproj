@@ -88,17 +88,17 @@
     <Compile Include="DefaultClasses\DependentActions.vb" />
     <Compile Include="DefaultClasses\BasicActions.vb" />
     <Compile Include="EmployerAndVacancy\Classes\Employer.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="Login\LoginPage.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Login\LoginPage.Designer.vb">
+      <DependentUpon>LoginPage.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployerAndVacancy\Main.Designer.vb">
+    <Compile Include="Main.Designer.vb">
       <DependentUpon>Main.vb</DependentUpon>
     </Compile>
-    <Compile Include="EmployerAndVacancy\Main.vb">
+    <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EmployerAndVacancy\EmployerManage.Designer.vb">
@@ -124,7 +124,7 @@
     </Compile>
     <Compile Include="DefaultClasses\SMTPControl.vb" />
     <Compile Include="DefaultClasses\SQLControl.vb" />
-    <Compile Include="User.vb" />
+    <Compile Include="Login\Classes\User.vb" />
     <Compile Include="EmployerAndVacancy\Classes\Vacancy.vb" />
     <Compile Include="EmployerAndVacancy\VacancyManage.Designer.vb">
       <DependentUpon>VacancyManage.vb</DependentUpon>
@@ -132,12 +132,33 @@
     <Compile Include="EmployerAndVacancy\VacancyManage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SeekerAndResume\Classes\Resume.vb" />
+    <Compile Include="SeekerAndResume\Classes\Seekers.vb" />
+    <Compile Include="SeekerAndResume\ResumeManage.Designer.vb">
+      <DependentUpon>ResumeManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeekerAndResume\ResumeManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeekerAndResume\SeekerManage.Designer.vb">
+      <DependentUpon>SeekerManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeekerAndResume\SeekerManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selection\Classes\Selection.vb" />
+    <Compile Include="selection\MainSelection.Designer.vb">
+      <DependentUpon>MainSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selection\MainSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Login\LoginPage.resx">
+      <DependentUpon>LoginPage.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployerAndVacancy\Main.resx">
+    <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployerAndVacancy\EmployerManage.resx">
@@ -151,6 +172,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployerAndVacancy\VacancyManage.resx">
       <DependentUpon>VacancyManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeekerAndResume\ResumeManage.resx">
+      <DependentUpon>ResumeManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeekerAndResume\SeekerManage.resx">
+      <DependentUpon>SeekerManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selection\MainSelection.resx">
+      <DependentUpon>MainSelection.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +206,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
