@@ -123,7 +123,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="DefaultClasses\SMTPControl.vb" />
-    <Compile Include="DefaultClasses\SQLControl.vb" />
     <Compile Include="Login\Classes\User.vb" />
     <Compile Include="EmployerAndVacancy\Classes\Vacancy.vb" />
     <Compile Include="EmployerAndVacancy\VacancyManage.Designer.vb">
@@ -153,6 +152,7 @@
     <Compile Include="selection\MainSelection.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SQLControlvb.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Login\LoginPage.resx">
