@@ -47,13 +47,14 @@ Partial Class LoginPage
         '
         'TextBox1
         '
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(56, 139)
         Me.TextBox1.MaxLength = 35
-        Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(307, 30)
+        Me.TextBox1.Size = New System.Drawing.Size(307, 21)
         Me.TextBox1.TabIndex = 4
-        Me.TextBox1.Text = "irina.blagun"
+        Me.TextBox1.Text = "irina.blagun@gmail.com"
         '
         'TextBox2
         '

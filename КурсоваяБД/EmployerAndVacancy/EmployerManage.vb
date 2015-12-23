@@ -18,10 +18,10 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         If Type = "create" Then
-            Data.Add(TextBox1.Text, MaskedTextBox1.Text, TextBox3.Text & ComboBox1.Text, TextBox2.Text)
-        ElseIf Type = "update"
-            Data.Update(TextBox1.Text, MaskedTextBox1.Text, TextBox3.Text & ComboBox1.Text, TextBox2.Text)
+            Data.Add(TextBox1.Text, MaskedTextBox1.Text, TextBox3.Text, TextBox2.Text)
+        ElseIf Type = "update" Then
+            Data.Update(TextBox1.Text, MaskedTextBox1.Text, TextBox3.Text, TextBox2.Text)
         End If
+        Me.Close()
     End Sub
-
 End Class

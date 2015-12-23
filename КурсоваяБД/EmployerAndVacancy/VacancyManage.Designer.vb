@@ -36,15 +36,15 @@ Partial Class VacancyManage
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -98,7 +98,7 @@ Partial Class VacancyManage
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Мужской", "Женский"})
+        Me.ComboBox3.Items.AddRange(New Object() {"Мужской", "Женский", "Не имеет значения"})
         Me.ComboBox3.Location = New System.Drawing.Point(189, 299)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(156, 24)
@@ -175,21 +175,14 @@ Partial Class VacancyManage
         Me.Label3.TabIndex = 35
         Me.Label3.Text = "Должность"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(36, 242)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(310, 22)
-        Me.TextBox1.TabIndex = 36
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(34, 222)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(224, 17)
+        Me.Label4.Size = New System.Drawing.Size(184, 17)
         Me.Label4.TabIndex = 37
-        Me.Label4.Text = "Минимальная заработная плата"
+        Me.Label4.Text = "Размер заработной платы"
         '
         'Label5
         '
@@ -199,13 +192,6 @@ Partial Class VacancyManage
         Me.Label5.Size = New System.Drawing.Size(62, 17)
         Me.Label5.TabIndex = 39
         Me.Label5.Text = "Возраст"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(37, 301)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(139, 22)
-        Me.TextBox2.TabIndex = 38
         '
         'Label7
         '
@@ -248,9 +234,27 @@ Partial Class VacancyManage
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(186, 281)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(62, 17)
+        Me.Label11.Size = New System.Drawing.Size(34, 17)
         Me.Label11.TabIndex = 44
-        Me.Label11.Text = "Возраст"
+        Me.Label11.Text = "Пол"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"До 2000000", "От 2000000 до 4000000", "От 4000000 до 6000000", "От 6000000"})
+        Me.ComboBox1.Location = New System.Drawing.Point(34, 242)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(311, 24)
+        Me.ComboBox1.TabIndex = 45
+        '
+        'ComboBox7
+        '
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Items.AddRange(New Object() {"До 18", "От 18 до 21", "От 21 до 27", "От 27 до 35", "От 35"})
+        Me.ComboBox7.Location = New System.Drawing.Point(35, 299)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(141, 24)
+        Me.ComboBox7.TabIndex = 46
         '
         'VacancyManage
         '
@@ -258,15 +262,15 @@ Partial Class VacancyManage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(394, 766)
+        Me.Controls.Add(Me.ComboBox7)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -304,13 +308,13 @@ Partial Class VacancyManage
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox7 As ComboBox
 End Class

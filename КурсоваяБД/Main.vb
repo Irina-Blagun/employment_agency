@@ -17,6 +17,8 @@
         Dim MeH As Integer = Me.Height / 2
 
         RerenderPanels()
+        Panel2.Visible = False
+
     End Sub
 
     Public Sub RerenderPanels()
@@ -102,9 +104,10 @@
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        Select Case MsgBox("Вы действительно хотите удалить работодателя '" & Employer.getCellSelectedRow(1) & "'", MsgBoxStyle.YesNo, "Удаление")
+        Select Case MsgBox("Вы уверены, что хотите удалить работодателя " & Employer.getCellSelectedRow(1) & "?", MsgBoxStyle.YesNo, "Удаление работодателя")
             Case MsgBoxResult.Yes
                 Employer.Delete()
+                Vacancy.UpdateDataset()
         End Select
     End Sub
 
@@ -115,7 +118,7 @@
     End Sub
 
     Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
-        Select Case MsgBox("Вы действительно хотите удалить вакансию '" & Employer.getCellSelectedRow(3) & "'", MsgBoxStyle.YesNo, "Удаление")
+        Select Case MsgBox("Вы уверены, что хотите удалить вакансию " & Vacancy.getCellSelectedRow(3) & " работодателя " & Employer.getCellSelectedRow(3) & "?", MsgBoxStyle.YesNo, "Удаление вакансии")
             Case MsgBoxResult.Yes
                 Vacancy.Delete()
         End Select
@@ -141,8 +144,8 @@
     End Sub
 
     Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
-        Panel1.Visible = False
         Panel2.Visible = True
+        Panel1.Visible = False
     End Sub
 
     Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
@@ -156,9 +159,10 @@
     End Sub
 
     Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
-        Select Case MsgBox("Вы действительно хотите удалить соискателя '" & Seeker.getCellSelectedRow(1) & "'", MsgBoxStyle.YesNo, "Удаление")
+        Select Case MsgBox("Вы уверены, что хотите удалить соискателя " & Seeker.getCellSelectedRow(1) & "?", MsgBoxStyle.YesNo, "Удаление соискателя")
             Case MsgBoxResult.Yes
                 Seeker.Delete()
+                Resumes.UpdateDataset()
         End Select
     End Sub
 
@@ -167,20 +171,12 @@
         ResumeManage.Show()
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
-    End Sub
-
     Private Sub DataGridView3_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView3.CellClick
         Resumes.RenderTable(Seeker.getCellSelectedRow(0))
     End Sub
 
     Private Sub PictureBox14_Click(sender As Object, e As EventArgs) Handles PictureBox14.Click
-        Select Case MsgBox("Вы действительно хотите удалить соискателя '" & Seeker.getCellSelectedRow(1) & "'", MsgBoxStyle.YesNo, "Удаление")
+        Select Case MsgBox("Вы уверены, что хотите удалить резюме на должность """ & Resumes.getCellSelectedRow(3) & """ соискателя " & Seeker.getCellSelectedRow(1) & "?", MsgBoxStyle.YesNo, "Удаление резюме")
             Case MsgBoxResult.Yes
                 Resumes.Delete()
         End Select
@@ -212,7 +208,7 @@
     End Sub
 
     Private Sub Main_FormClosed(sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
-        Select Case MsgBox("Вы действительно хотите выйти из программы?", MsgBoxStyle.YesNo, "Выход")
+        Select Case MsgBox("Вы уверены, что хотите выйти из программы?", MsgBoxStyle.YesNo, "Выход")
             Case MsgBoxResult.Yes
                 LoginPage.Close()
             Case MsgBoxResult.Cancel
@@ -220,5 +216,10 @@
             Case MsgBoxResult.No
                 e.Cancel = True
         End Select
+    End Sub
+
+    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
+        ResumeManage.Type = "update"
+        ResumeManage.Show()
     End Sub
 End Class
