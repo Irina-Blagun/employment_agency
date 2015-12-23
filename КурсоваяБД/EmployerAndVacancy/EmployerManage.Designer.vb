@@ -139,10 +139,11 @@ Partial Class EmployerManage
         Me.TextBox2.Size = New System.Drawing.Size(224, 22)
         Me.TextBox2.TabIndex = 23
         '
-        'Form3
+        'EmployerManage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(294, 388)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label6)
@@ -157,7 +158,7 @@ Partial Class EmployerManage
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "Form3"
+        Me.Name = "EmployerManage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Работодатель"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
