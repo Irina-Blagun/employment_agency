@@ -27,6 +27,7 @@ Partial Class Main
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
@@ -45,12 +46,12 @@ Partial Class Main
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,7 +69,6 @@ Partial Class Main
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -129,6 +129,15 @@ Partial Class Main
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1039, 852)
         Me.Panel1.TabIndex = 8
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.BackColor = System.Drawing.Color.BurlyWood
+        Me.PictureBox16.Location = New System.Drawing.Point(677, 340)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox16.TabIndex = 14
+        Me.PictureBox16.TabStop = False
         '
         'PictureBox5
         '
@@ -214,7 +223,7 @@ Partial Class Main
         Me.Panel2.Controls.Add(Me.DataGridView3)
         Me.Panel2.Controls.Add(Me.PictureBox11)
         Me.Panel2.Controls.Add(Me.PictureBox12)
-        Me.Panel2.Location = New System.Drawing.Point(1302, 112)
+        Me.Panel2.Location = New System.Drawing.Point(594, 95)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(949, 852)
         Me.Panel2.TabIndex = 14
@@ -306,15 +315,6 @@ Partial Class Main
         Me.PictureBox12.TabIndex = 2
         Me.PictureBox12.TabStop = False
         '
-        'PictureBox16
-        '
-        Me.PictureBox16.BackColor = System.Drawing.Color.BurlyWood
-        Me.PictureBox16.Location = New System.Drawing.Point(677, 340)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox16.TabIndex = 14
-        Me.PictureBox16.TabStop = False
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -332,6 +332,7 @@ Partial Class Main
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -349,7 +350,6 @@ Partial Class Main
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
