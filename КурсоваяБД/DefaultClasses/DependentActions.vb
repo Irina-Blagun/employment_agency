@@ -16,7 +16,7 @@ Public Class DependentActions
 
     ' *Default methods
 
-    Private Sub UpdateDataset()
+    Public Sub UpdateDataset()
         RenderDataset(TableQueryLast)
     End Sub
 
@@ -41,14 +41,12 @@ Public Class DependentActions
         End Try
     End Sub
 
-    Public Sub RunQueryAndUpdate(Query As String, SuccessMsg As String, ErrorMsg As String)
+    Public Sub RunQueryAndUpdate(Query As String, ErrorMsg As String)
         Try
             SQLControl.SQLCon.Open()
             SQLCmd = New SqlCommand(Query, SQLControl.SQLCon)
             SQLCmd.ExecuteNonQuery()
             SQLControl.SQLCon.Close()
-
-            MsgBox(SuccessMsg)
         Catch ex As Exception
             SQLControl.SQLCon.Close()
             MsgBox(ErrorMsg & "', ['" & ex.Message & "']'")

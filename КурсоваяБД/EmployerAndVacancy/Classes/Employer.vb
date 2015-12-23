@@ -7,17 +7,17 @@
 
     Public Sub Add(Name As String, Phone As String, Email As String, Adress As String)
         Dim Query As String = "INSERT INTO employer (er_name, er_phone, er_email, er_adress) VALUES ('" & Name & "', '" & Phone & "', '" & Email & "', '" & Adress & "')"
-        RunQueryAndUpdate(Query, "ОК", "Просто жесть")
+        RunQueryAndUpdate(Query, "Просто жесть")
     End Sub
 
     Public Sub Update(Name As String, Phone As String, Email As String, Adress As String)
         Dim Query As String = "UPDATE employer SET employer.er_name = '" & Name & "', employer.er_phone='" & Phone & "', employer.er_email='" & Email & "', employer.er_adress='" & Adress & "' WHERE employer.id_employer='" & Me.getCellSelectedRow(0) & "'"
-        RunQueryAndUpdate(Query, "ОК", "Просто жесть")
+        RunQueryAndUpdate(Query, "Просто жесть")
     End Sub
 
     Public Sub Delete()
         Dim ID As String = getCellSelectedRow(0)
         Dim Query As String = "DELETE FROM employer WHERE id_employer = '" & ID & "'"
-        RunQueryAndUpdate(Query, "Работодатель удалён", "Ошибочка вышла")
+        RunQueryAndUpdate(Query, "Ошибочка вышла")
     End Sub
 End Class

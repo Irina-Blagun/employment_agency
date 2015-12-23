@@ -9,13 +9,20 @@ Public Class BasicActions
     Dim TableQueryDefault As String
 
     Public Sub New(Table As DataGridView, TableQueryDefault As String)
-        MsgBox(TableQueryDefault)
         Me.Table = Table
         Me.TableQueryDefault = TableQueryDefault
         Me.UpdateDataset()
     End Sub
 
     ' Default methods and function
+
+    Public Function checkSelectedRow() As Boolean
+        If Table.CurrentCell.ToString And Table.Rows(Table.CurrentCell.RowIndex).Cells(0).Value.ToString.Length > 0 Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
 
     Public Function getCellSelectedRow(Number As Integer) As String
         Return Table.Rows(Table.CurrentCell.RowIndex).Cells(Number).Value.ToString()
@@ -40,14 +47,12 @@ Public Class BasicActions
         End Try
     End Sub
 
-    Public Sub RunQueryAndUpdate(Query As String, SuccessMsg As String, ErrorMsg As String)
+    Public Sub RunQueryAndUpdate(Query As String, ErrorMsg As String)
         Try
             SQLControl.SQLCon.Open()
             SQLCmd = New SqlCommand(Query, SQLControl.SQLCon)
             SQLCmd.ExecuteNonQuery()
             SQLControl.SQLCon.Close()
-
-            MsgBox(SuccessMsg)
         Catch ex As Exception
             SQLControl.SQLCon.Close()
             MsgBox(ErrorMsg & "', ['" & ex.Message & "']'")
