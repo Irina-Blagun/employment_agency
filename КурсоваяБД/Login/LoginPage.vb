@@ -50,7 +50,7 @@
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-
+        SMTPControl.SendEmail("irina.blagun@gmail.com", "Восстановление пароля", "Ваш пароль: 123")
     End Sub
 End Class
 
