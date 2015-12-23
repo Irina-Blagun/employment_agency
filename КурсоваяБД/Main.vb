@@ -180,6 +180,7 @@
     End Sub
 
     Private Sub PictureBox15_Click(sender As Object, e As EventArgs) Handles PictureBox15.Click
+        Selection.Type = "seeker"
         Selection.RenderTableForSeeker(Resumes.getCellSelectedRow(0), Resumes.getCellSelectedRow(2), Resumes.getCellSelectedRow(4), Resumes.getCellSelectedRow(5), Resumes.getCellSelectedRow(6), Resumes.getCellSelectedRow(9), Resumes.getCellSelectedRow(10), Resumes.getCellSelectedRow(11), Resumes.getCellSelectedRow(7), Resumes.getCellSelectedRow(8))
     End Sub
 

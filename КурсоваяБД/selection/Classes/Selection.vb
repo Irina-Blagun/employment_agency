@@ -17,10 +17,16 @@
 
     Public Sub RenderTableForEmployer(IDvacancy As String, Activity As String, MinSalary As String, Sex As String, Age As String, Employment As String, Shedule As String, SocialPackage As String, Education As String, Experience As String)
         MainSelection.Show()
-        'Показ резюме
-
         Dim Query As String = "SELECT seeker.sr_name As 'Соискатель', seeker.sr_phone As 'Номер телефона', seeker.sr_email As 'E-mail', resume.id_resume As 'Номер', resume.re_creation_date As 'Дата создания', resume.re_activity As 'Вид деятельности', resume.re_office As 'Должность', resume.re_min_salary As 'Заработная плата', resume.re_sex As 'Пол', resume.re_age As 'Возраст', resume.re_education As 'Образование', resume.re_experience As 'Опыт работы', resume.re_employment As 'Занятость', resume.re_schedule As 'График работы', resume.re_social_package As 'Соц. пакет' FROM seeker,resume WHERE re_activity = '" & Activity & "' and re_min_salary >= '" & MinSalary & "' and re_sex = '" & Sex & "' and re_age <= '" & Age & "' and re_employment = '" & Employment & "' and re_schedule = '" & Shedule & "' and re_social_package = '" & SocialPackage & "' and re_education = '" & Education & "' and re_experience = '" & Experience & "'"
         MyBase.RenderDataset(Query)
+    End Sub
+
+    Public Sub SendNotification()
+        If Type = "seeker" Then
+            SMTPControl.SendEmail(Main.Selection.getCellSelectedRow(2), "Резюме, подходящее вашей вакансии", "Здравствуйте, " & Main.Selection.getCellSelectedRow(0) & "! Соискатель " & Main.Seeker.getCellSelectedRow(1) & "  откликнулся на вашу вакансию. " & vbCrLf & vbCrLf & " Контактные данные соискателя: " & vbCrLf & " Телефон: " & Main.Selection.getCellSelectedRow(1) & vbCrLf & " E-mail: " & Main.Selection.getCellSelectedRow(4) & vbCrLf & vbCrLf & " Пол: " & Main.Resumes.getCellSelectedRow(5) & vbCrLf & " Возраст: " & Main.Resumes.getCellSelectedRow(6) & vbCrLf & " Должность: " & Main.Resumes.getCellSelectedRow(3))
+        Else
+            SMTPControl.SendEmail(Main.Selection.getCellSelectedRow(2), "Вакансия, подходящая вашему резюме", "Здравствуйте, " & Main.Selection.getCellSelectedRow(0) & "! Работодатель " & Main.Employer.getCellSelectedRow(1) & "  откликнулся на ваше резюме. " & vbCrLf & vbCrLf & " Контактные данные работодателя: " & vbCrLf & " Телефон: " & Main.Employer.getCellSelectedRow(2) & vbCrLf & " E-mail: " & Main.Employer.getCellSelectedRow(3) & vbCrLf & vbCrLf & " Должность: " & Main.Vacancy.getCellSelectedRow(3) & vbCrLf & " Заработная плата: " & Main.Vacancy.getCellSelectedRow(4))
+        End If
     End Sub
 
 End Class
