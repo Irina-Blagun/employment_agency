@@ -61,5 +61,22 @@ Public Class BasicActions
         End Try
     End Sub
 
+    Public Sub SearchTable(Text As String)
+        Dim a As Boolean = False
+        Dim Row As DataGridViewRow
+        For Each Row In Table.Rows
+
+            For index As Integer = 0 To Row.Cells.Count - 1
+                If (Row.Cells(index).Value.ToString().Contains(Text)) Then
+                    Table.CurrentCell = Row.Cells(1)
+                    Table.Rows(Row.Index).Selected = True
+                    a = True
+                End If
+            Next
+
+        Next
+        If a = False Then MsgBox("Не найден", 32, "Поиск")
+    End Sub
+
 
 End Class

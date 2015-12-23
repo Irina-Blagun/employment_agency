@@ -51,6 +51,10 @@
         PictureBox6.Top = 80 + DataGridView1.Height + 20
         PictureBox7.Top = 80 + DataGridView1.Height + 20
         PictureBox16.Top = 80 + DataGridView1.Height + 20
+        Button4.Top = 80 + DataGridView1.Height + 20
+        TextBox4.Top = 80 + DataGridView1.Height + 20
+
+
         DataGridView2.Left = 20
         DataGridView2.Top = DataGridView1.Height + 80 + 80
         DataGridView2.Width = Panel1.Width - 40
@@ -75,6 +79,11 @@
         PictureBox13.Top = 80 + DataGridView1.Height + 20
         PictureBox14.Top = 80 + DataGridView1.Height + 20
         PictureBox15.Top = 80 + DataGridView1.Height + 20
+        Button2.Top = 80 + DataGridView1.Height + 20
+        TextBox2.Top = 80 + DataGridView1.Height + 20
+
+
+
         DataGridView4.Left = 20
         DataGridView4.Top = DataGridView1.Height + 80 + 80
         DataGridView4.Width = Panel1.Width - 40
@@ -186,5 +195,21 @@
 
     Private Sub PictureBox16_Click(sender As Object, e As EventArgs) Handles PictureBox16.Click
         Selection.RenderTableForEmployer(Vacancy.getCellSelectedRow(0), Vacancy.getCellSelectedRow(2), Vacancy.getCellSelectedRow(4), Vacancy.getCellSelectedRow(5), Vacancy.getCellSelectedRow(6), Vacancy.getCellSelectedRow(10), Vacancy.getCellSelectedRow(11), Vacancy.getCellSelectedRow(12), Vacancy.getCellSelectedRow(8), Vacancy.getCellSelectedRow(9))
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Seeker.SearchTable(TextBox1.Text)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Resumes.SearchTable(TextBox2.Text)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Employer.SearchTable(TextBox3.Text)
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Vacancy.SearchTable(TextBox4.Text)
     End Sub
 End Class
