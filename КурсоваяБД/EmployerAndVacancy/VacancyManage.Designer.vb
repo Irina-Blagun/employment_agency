@@ -28,7 +28,6 @@ Partial Class VacancyManage
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -38,7 +37,6 @@ Partial Class VacancyManage
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -103,15 +101,6 @@ Partial Class VacancyManage
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(156, 24)
         Me.ComboBox3.TabIndex = 22
-        '
-        'CheckedListBox1
-        '
-        Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Items.AddRange(New Object() {"Английский", "Французский", "Немецкий", "Итальянский", "Испанский", "Польский", "Белорусский", "Русский", "Другой язык"})
-        Me.CheckedListBox1.Location = New System.Drawing.Point(38, 366)
-        Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(307, 89)
-        Me.CheckedListBox1.TabIndex = 24
         '
         'ComboBox2
         '
@@ -193,15 +182,6 @@ Partial Class VacancyManage
         Me.Label5.TabIndex = 39
         Me.Label5.Text = "Возраст"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(35, 346)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(50, 17)
-        Me.Label7.TabIndex = 40
-        Me.Label7.Text = "Языки"
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -268,7 +248,6 @@ Partial Class VacancyManage
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -282,7 +261,6 @@ Partial Class VacancyManage
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.TextBox5)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -300,7 +278,6 @@ Partial Class VacancyManage
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents CheckedListBox1 As CheckedListBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
@@ -310,7 +287,6 @@ Partial Class VacancyManage
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label

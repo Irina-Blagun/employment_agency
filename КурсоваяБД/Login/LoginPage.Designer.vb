@@ -96,7 +96,7 @@ Partial Class LoginPage
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox3.Image = Global.КурсоваяБД.My.Resources.Resources.АВТОРИЗАЦИЯ___Для_сотрудников_комп
+        Me.PictureBox3.Image = Global.КурсоваяБД.My.Resources.Resources.Авторизация
         Me.PictureBox3.InitialImage = CType(resources.GetObject("PictureBox3.InitialImage"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(56, 50)
         Me.PictureBox3.Name = "PictureBox3"
@@ -127,11 +127,11 @@ Partial Class LoginPage
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Image = Global.КурсоваяБД.My.Resources.Resources.Rectangle_1___Войти1
+        Me.PictureBox1.Image = Global.КурсоваяБД.My.Resources.Resources.button_Войти
         Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(56, 256)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(90, 25)
+        Me.PictureBox1.Size = New System.Drawing.Size(112, 31)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -155,7 +155,7 @@ Partial Class LoginPage
         '
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox4.Image = Global.КурсоваяБД.My.Resources.Resources._456
+        Me.PictureBox4.Image = Global.КурсоваяБД.My.Resources.Resources.ВосстановлениеПароля
         Me.PictureBox4.InitialImage = CType(resources.GetObject("PictureBox4.InitialImage"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(52, 49)
         Me.PictureBox4.Name = "PictureBox4"
@@ -193,7 +193,7 @@ Partial Class LoginPage
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.Control
-        Me.PictureBox2.Image = Global.КурсоваяБД.My.Resources.Resources._123
+        Me.PictureBox2.Image = Global.КурсоваяБД.My.Resources.Resources.button_Отправить
         Me.PictureBox2.Location = New System.Drawing.Point(53, 182)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(104, 25)
@@ -210,7 +210,7 @@ Partial Class LoginPage
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "LoginPage"
-        Me.Text = "IWork - Логин панель"
+        Me.Text = "IWork - Авторизация"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()

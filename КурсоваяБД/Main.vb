@@ -19,6 +19,10 @@
         RerenderPanels()
         Panel2.Visible = False
 
+        Me.DataGridView1.Rows(0).Selected = True
+        Vacancy.RenderTable(Employer.getCellSelectedRow(0))
+        Me.DataGridView3.Rows(0).Selected = True
+        Resumes.RenderTable(Seeker.getCellSelectedRow(0))
     End Sub
 
     Public Sub RerenderPanels()
@@ -29,65 +33,101 @@
         Panel4.Width = Me.Width
         Panel4.Height = 60
 
-        'SIDERBAR
-        Panel5.Top = Panel4.Height
-        Panel5.Left = 0
-        Panel5.Height = Me.Height - Panel4.Height
-        Panel5.Width = 260
-
         'CONTENT 1
 
-        Panel1.Left = Panel5.Width + 20
+        Panel1.Left = 20
+        Panel1.Width = Me.Width - Panel1.Left * 2.8
         Panel1.Top = Panel4.Height + 20
         Panel1.Height = Me.Height - Panel4.Height - 75
-        Panel1.Width = Me.Width - Panel5.Width - 50
+
 
         ' TABLE
+
         DataGridView1.Left = 20
         DataGridView1.Top = 80
-        DataGridView1.Width = Panel1.Width - 40
+        DataGridView1.Width = Panel1.Width - DataGridView1.Left * 2
         DataGridView1.Height = (Panel1.Height - 80) * 0.4
 
-        ' TABLE
-        PictureBox5.Top = 80 + DataGridView1.Height + 20
-        PictureBox6.Top = 80 + DataGridView1.Height + 20
-        PictureBox7.Top = 80 + DataGridView1.Height + 20
-        PictureBox16.Top = 80 + DataGridView1.Height + 20
-        PictureBox18.Top = 80 + DataGridView1.Height + 20
+        ' BUTTONS
 
+        PictureBox5.Top = 80 + DataGridView1.Height + 26
+        PictureBox6.Top = 80 + DataGridView1.Height + 26
+        PictureBox7.Top = 80 + DataGridView1.Height + 26
+        PictureBox16.Top = 80 + DataGridView1.Height + 26
+        PictureBox18.Top = 80 + DataGridView1.Height + 26
 
         DataGridView2.Left = 20
         DataGridView2.Top = DataGridView1.Height + 80 + 80
         DataGridView2.Width = Panel1.Width - 40
         DataGridView2.Height = ((Panel1.Height - 80) * 0.6) - 40 - 80
 
+        'OTHER
+
+        PictureBox21.Top = Panel4.Height / 2 - PictureBox21.Height / 2
+        PictureBox21.Left = Panel1.Left
+
+        PictureBox4.Top = Panel4.Height / 2 - PictureBox4.Height / 2
+        PictureBox4.Left = PictureBox21.Width * 6
+
+        PictureBox8.Top = Panel4.Height / 2 - PictureBox8.Height / 2
+        PictureBox8.Left = PictureBox4.Left + PictureBox4.Width + PictureBox4.Width / 4
+
+        PictureBox23.Top = 80 + DataGridView1.Height + 30
+
+        ''Panel2.Left = 20
+        ''Panel2.Top = Panel4.Height + 20
+        ''Panel2.Height = Me.Height - Panel4.Height - 75
+        ''Panel2.Width = Me.Width - 50
+
+        ''TABLE
+        ''DataGridView3.Left = 20
+        ''DataGridView3.Top = 80
+        ''DataGridView3.Width = Panel1.Width - 40
+        ''DataGridView3.Height = (Panel1.Height - 80) * 0.4
+
+        '' TABLE
+        'PictureBox9.Top = 80 + DataGridView1.Height + 20
+        'PictureBox13.Top = 80 + DataGridView1.Height + 20
+        'PictureBox14.Top = 80 + DataGridView1.Height + 20
+        'PictureBox15.Top = 80 + DataGridView1.Height + 20
+        'PictureBox20.Top = 80 + DataGridView1.Height + 20
+
+        'DataGridView4.Left = 20
+        'DataGridView4.Top = DataGridView1.Height + 80 + 80
+        'DataGridView4.Width = Panel1.Width - 40
+        'DataGridView4.Height = ((Panel1.Height - 80) * 0.6) - 40 - 80
 
         'CONTENT 2
 
-        Panel2.Left = Panel5.Width + 20
+        Panel2.Left = 20
+        Panel2.Width = Me.Width - Panel1.Left * 2.8
         Panel2.Top = Panel4.Height + 20
         Panel2.Height = Me.Height - Panel4.Height - 75
-        Panel2.Width = Me.Width - Panel5.Width - 50
 
-        ' TABLE
+
+        ' TABLE 2
+
         DataGridView3.Left = 20
         DataGridView3.Top = 80
-        DataGridView3.Width = Panel1.Width - 40
-        DataGridView3.Height = (Panel1.Height - 80) * 0.4
+        DataGridView3.Width = Panel2.Width - DataGridView3.Left * 2
+        DataGridView3.Height = (Panel2.Height - 80) * 0.4
 
-        ' TABLE
-        PictureBox9.Top = 80 + DataGridView1.Height + 20
-        PictureBox13.Top = 80 + DataGridView1.Height + 20
-        PictureBox14.Top = 80 + DataGridView1.Height + 20
-        PictureBox15.Top = 80 + DataGridView1.Height + 20
-        PictureBox20.Top = 80 + DataGridView1.Height + 20
+        ' BUTTONS 2
 
-
+        PictureBox9.Top = 80 + DataGridView3.Height + 26
+        PictureBox13.Top = 80 + DataGridView3.Height + 26
+        PictureBox14.Top = 80 + DataGridView3.Height + 26
+        PictureBox20.Top = 80 + DataGridView3.Height + 26
+        PictureBox15.Top = 80 + DataGridView3.Height + 26
 
         DataGridView4.Left = 20
-        DataGridView4.Top = DataGridView1.Height + 80 + 80
-        DataGridView4.Width = Panel1.Width - 40
-        DataGridView4.Height = ((Panel1.Height - 80) * 0.6) - 40 - 80
+        DataGridView4.Top = DataGridView3.Height + 80 + 80
+        DataGridView4.Width = Panel2.Width - 40
+        DataGridView4.Height = ((Panel2.Height - 80) * 0.6) - 40 - 80
+
+        'OTHER 2
+
+        PictureBox25.Top = 80 + DataGridView1.Height + 30
 
     End Sub
 
@@ -191,22 +231,6 @@
         Selection.RenderTableForEmployer(Vacancy.getCellSelectedRow(0), Vacancy.getCellSelectedRow(2), Vacancy.getCellSelectedRow(4), Vacancy.getCellSelectedRow(5), Vacancy.getCellSelectedRow(6), Vacancy.getCellSelectedRow(10), Vacancy.getCellSelectedRow(11), Vacancy.getCellSelectedRow(12), Vacancy.getCellSelectedRow(8), Vacancy.getCellSelectedRow(9))
     End Sub
 
-    Private Sub PictureBox17_Click(sender As Object, e As EventArgs) Handles PictureBox17.Click
-        Employer.SearchTable()
-    End Sub
-
-    Private Sub PictureBox18_Click(sender As Object, e As EventArgs) Handles PictureBox18.Click
-        Vacancy.SearchTable()
-    End Sub
-
-    Private Sub PictureBox19_Click(sender As Object, e As EventArgs) Handles PictureBox19.Click
-        Seeker.SearchTable()
-    End Sub
-
-    Private Sub PictureBox20_Click(sender As Object, e As EventArgs) Handles PictureBox20.Click
-        Resumes.SearchTable()
-    End Sub
-
     Private Sub Main_FormClosed(sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
         Select Case MsgBox("Вы уверены, что хотите выйти из программы?", MsgBoxStyle.YesNo, "Выход")
             Case MsgBoxResult.Yes
@@ -221,5 +245,30 @@
     Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
         ResumeManage.Type = "update"
         ResumeManage.Show()
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        Dim a As Boolean = False
+        Dim Row As DataGridViewRow
+        Dim str_find As String = TextBox1.Text
+        For Each Row In DataGridView1.Rows
+
+            If (Row.Cells(1).Value.ToString().Contains(str_find)) Then
+                DataGridView1.CurrentCell = Row.Cells(1)
+                DataGridView1.Rows(Row.Index).Selected = True
+                a = True
+                Vacancy.RenderTable(Employer.getCellSelectedRow(0))
+            End If
+        Next
+        If a = False Or TextBox1.Text = "" Then
+            DataGridView1.ClearSelection()
+            DataGridView2.Columns.Clear()
+        End If
+
+
+    End Sub
+
+    Private Sub PictureBox20_Click(sender As Object, e As EventArgs) Handles PictureBox20.Click
+
     End Sub
 End Class

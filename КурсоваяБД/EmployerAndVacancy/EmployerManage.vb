@@ -6,10 +6,17 @@
         If Type = "update" Then
             LoadData()
         End If
+
+        PictureBox1.Left = Panel1.Width / 2 - PictureBox1.Width / 2
+        TextBox1.Width = Panel1.Width - 60
+        TextBox1.Left = Panel1.Width / 2 - TextBox1.Width / 2
+        TextBox1.Top = 110
     End Sub
 
     Public Sub LoadData()
-        Label6.Text = "Изменение работодателя"
+        Me.Text = "Изменение"
+        PictureBox1.Image = КурсоваяБД.My.Resources.Resources.button_Изменить_1
+        PictureBox3.Image = КурсоваяБД.My.Resources.Resources.ИЗМЕНЕНИЕ_РАБОТОДАТЕЛЯ
         TextBox1.Text = Data.getCellSelectedRow(1)
         MaskedTextBox1.Text = Data.getCellSelectedRow(2)
         TextBox2.Text = Data.getCellSelectedRow(4)
