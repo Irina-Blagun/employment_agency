@@ -54,6 +54,7 @@ Partial Class Main
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -134,8 +135,8 @@ Partial Class Main
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.DataGridView1.Location = New System.Drawing.Point(22, 75)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Location = New System.Drawing.Point(29, 92)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
@@ -156,7 +157,7 @@ Partial Class Main
         Me.DataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(721, 185)
+        Me.DataGridView1.Size = New System.Drawing.Size(961, 228)
         Me.DataGridView1.TabIndex = 0
         '
         'DataGridView2
@@ -188,8 +189,8 @@ Partial Class Main
         DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridView2.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.DataGridView2.Location = New System.Drawing.Point(22, 331)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView2.Location = New System.Drawing.Point(29, 407)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView2.MultiSelect = False
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.ReadOnly = True
@@ -201,7 +202,7 @@ Partial Class Main
         Me.DataGridView2.RowTemplate.ReadOnly = True
         Me.DataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView2.Size = New System.Drawing.Size(721, 337)
+        Me.DataGridView2.Size = New System.Drawing.Size(961, 415)
         Me.DataGridView2.TabIndex = 1
         '
         'Panel1
@@ -222,19 +223,19 @@ Partial Class Main
         Me.Panel1.Controls.Add(Me.DataGridView2)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(26, 91)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Location = New System.Drawing.Point(35, 112)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(940, 713)
+        Me.Panel1.Size = New System.Drawing.Size(1253, 878)
         Me.Panel1.TabIndex = 8
         '
         'PictureBox22
         '
         Me.PictureBox22.Image = Global.КурсоваяБД.My.Resources.Resources.Работодатели
-        Me.PictureBox22.Location = New System.Drawing.Point(22, 31)
-        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox22.Location = New System.Drawing.Point(29, 38)
+        Me.PictureBox22.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(187, 26)
+        Me.PictureBox22.Size = New System.Drawing.Size(249, 32)
         Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox22.TabIndex = 22
         Me.PictureBox22.TabStop = False
@@ -246,19 +247,19 @@ Partial Class Main
         Me.TextBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.6!, System.Drawing.FontStyle.Bold)
         Me.TextBox1.ForeColor = System.Drawing.SystemColors.Window
         Me.TextBox1.HideSelection = False
-        Me.TextBox1.Location = New System.Drawing.Point(748, 32)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Location = New System.Drawing.Point(997, 39)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(54, 18)
+        Me.TextBox1.Size = New System.Drawing.Size(72, 22)
         Me.TextBox1.TabIndex = 1
         '
         'PictureBox23
         '
         Me.PictureBox23.Image = CType(resources.GetObject("PictureBox23.Image"), System.Drawing.Image)
-        Me.PictureBox23.Location = New System.Drawing.Point(22, 288)
-        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox23.Location = New System.Drawing.Point(29, 354)
+        Me.PictureBox23.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(137, 21)
+        Me.PictureBox23.Size = New System.Drawing.Size(183, 26)
         Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox23.TabIndex = 21
         Me.PictureBox23.TabStop = False
@@ -267,8 +268,8 @@ Partial Class Main
         '
         Me.PictureBox18.BackColor = System.Drawing.Color.White
         Me.PictureBox18.Image = Global.КурсоваяБД.My.Resources.Resources.button_Поиск
-        Me.PictureBox18.Location = New System.Drawing.Point(698, 284)
-        Me.PictureBox18.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox18.Location = New System.Drawing.Point(931, 350)
+        Me.PictureBox18.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox18.Name = "PictureBox18"
         Me.PictureBox18.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -279,8 +280,8 @@ Partial Class Main
         '
         Me.PictureBox17.BackColor = System.Drawing.Color.White
         Me.PictureBox17.Image = Global.КурсоваяБД.My.Resources.Resources.button_Поиск
-        Me.PictureBox17.Location = New System.Drawing.Point(698, 26)
-        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox17.Location = New System.Drawing.Point(931, 32)
+        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox17.Name = "PictureBox17"
         Me.PictureBox17.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -291,8 +292,8 @@ Partial Class Main
         '
         Me.PictureBox16.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
-        Me.PictureBox16.Location = New System.Drawing.Point(832, 284)
-        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox16.Location = New System.Drawing.Point(1109, 350)
+        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox16.Name = "PictureBox16"
         Me.PictureBox16.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -303,8 +304,8 @@ Partial Class Main
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox5.Image = Global.КурсоваяБД.My.Resources.Resources.Button_Добавить_2
-        Me.PictureBox5.Location = New System.Drawing.Point(229, 284)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox5.Location = New System.Drawing.Point(305, 350)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -315,8 +316,8 @@ Partial Class Main
         '
         Me.PictureBox6.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(362, 284)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox6.Location = New System.Drawing.Point(483, 350)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -327,8 +328,8 @@ Partial Class Main
         '
         Me.PictureBox7.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox7.Image = Global.КурсоваяБД.My.Resources.Resources.button_Удалить
-        Me.PictureBox7.Location = New System.Drawing.Point(496, 284)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox7.Location = New System.Drawing.Point(661, 350)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -339,8 +340,8 @@ Partial Class Main
         '
         Me.PictureBox3.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox3.Image = Global.КурсоваяБД.My.Resources.Resources.button_Удалить
-        Me.PictureBox3.Location = New System.Drawing.Point(496, 26)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox3.Location = New System.Drawing.Point(661, 32)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -351,8 +352,8 @@ Partial Class Main
         '
         Me.PictureBox2.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(362, 26)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Location = New System.Drawing.Point(483, 32)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -363,8 +364,8 @@ Partial Class Main
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox1.Image = Global.КурсоваяБД.My.Resources.Resources.Button_Добавить_2
-        Me.PictureBox1.Location = New System.Drawing.Point(229, 26)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(305, 32)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -374,23 +375,33 @@ Partial Class Main
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(177, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(193, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.Label1)
         Me.Panel4.Controls.Add(Me.PictureBox8)
         Me.Panel4.Controls.Add(Me.PictureBox21)
         Me.Panel4.Controls.Add(Me.PictureBox4)
         Me.Panel4.Location = New System.Drawing.Point(1, 0)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1220, 72)
+        Me.Panel4.Size = New System.Drawing.Size(1627, 89)
         Me.Panel4.TabIndex = 14
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(862, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(51, 17)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Label1"
         '
         'PictureBox8
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox8.Image = Global.КурсоваяБД.My.Resources.Resources.icon_Соискатели_Резюме
-        Me.PictureBox8.Location = New System.Drawing.Point(343, 20)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox8.Location = New System.Drawing.Point(457, 25)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(140, 42)
+        Me.PictureBox8.Size = New System.Drawing.Size(187, 52)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 1
         Me.PictureBox8.TabStop = False
@@ -399,10 +410,10 @@ Partial Class Main
         '
         Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox21.Image = Global.КурсоваяБД.My.Resources.Resources.IWork_лого
-        Me.PictureBox21.Location = New System.Drawing.Point(26, 26)
-        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox21.Location = New System.Drawing.Point(35, 32)
+        Me.PictureBox21.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(133, 36)
+        Me.PictureBox21.Size = New System.Drawing.Size(177, 44)
         Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox21.TabIndex = 3
         Me.PictureBox21.TabStop = False
@@ -411,10 +422,10 @@ Partial Class Main
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(182, 20)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox4.Location = New System.Drawing.Point(243, 25)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(157, 42)
+        Me.PictureBox4.Size = New System.Drawing.Size(209, 52)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 0
         Me.PictureBox4.TabStop = False
@@ -436,19 +447,19 @@ Partial Class Main
         Me.Panel2.Controls.Add(Me.PictureBox11)
         Me.Panel2.Controls.Add(Me.PictureBox12)
         Me.Panel2.ForeColor = System.Drawing.Color.Black
-        Me.Panel2.Location = New System.Drawing.Point(986, 91)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Location = New System.Drawing.Point(117, 93)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(940, 713)
+        Me.Panel2.Size = New System.Drawing.Size(1253, 878)
         Me.Panel2.TabIndex = 14
         '
         'PictureBox25
         '
         Me.PictureBox25.Image = Global.КурсоваяБД.My.Resources.Resources.РЕЗЮМЕ
-        Me.PictureBox25.Location = New System.Drawing.Point(22, 288)
-        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox25.Location = New System.Drawing.Point(29, 354)
+        Me.PictureBox25.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(106, 21)
+        Me.PictureBox25.Size = New System.Drawing.Size(141, 26)
         Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox25.TabIndex = 18
         Me.PictureBox25.TabStop = False
@@ -456,10 +467,10 @@ Partial Class Main
         'PictureBox24
         '
         Me.PictureBox24.Image = Global.КурсоваяБД.My.Resources.Resources.СОИСКАТЕЛИ
-        Me.PictureBox24.Location = New System.Drawing.Point(22, 32)
-        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox24.Location = New System.Drawing.Point(29, 39)
+        Me.PictureBox24.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(160, 21)
+        Me.PictureBox24.Size = New System.Drawing.Size(213, 26)
         Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox24.TabIndex = 17
         Me.PictureBox24.TabStop = False
@@ -468,8 +479,8 @@ Partial Class Main
         '
         Me.PictureBox20.BackColor = System.Drawing.Color.White
         Me.PictureBox20.Image = Global.КурсоваяБД.My.Resources.Resources.button_Поиск
-        Me.PictureBox20.Location = New System.Drawing.Point(698, 284)
-        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox20.Location = New System.Drawing.Point(931, 350)
+        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox20.Name = "PictureBox20"
         Me.PictureBox20.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -480,8 +491,8 @@ Partial Class Main
         '
         Me.PictureBox19.BackColor = System.Drawing.Color.White
         Me.PictureBox19.Image = Global.КурсоваяБД.My.Resources.Resources.button_Поиск
-        Me.PictureBox19.Location = New System.Drawing.Point(698, 26)
-        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox19.Location = New System.Drawing.Point(931, 32)
+        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox19.Name = "PictureBox19"
         Me.PictureBox19.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -492,8 +503,8 @@ Partial Class Main
         '
         Me.PictureBox15.BackColor = System.Drawing.Color.White
         Me.PictureBox15.Image = Global.КурсоваяБД.My.Resources.Resources.button_Подобрать
-        Me.PictureBox15.Location = New System.Drawing.Point(832, 284)
-        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox15.Location = New System.Drawing.Point(1109, 350)
+        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox15.Name = "PictureBox15"
         Me.PictureBox15.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -529,8 +540,8 @@ Partial Class Main
         DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView4.DefaultCellStyle = DataGridViewCellStyle9
         Me.DataGridView4.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.DataGridView4.Location = New System.Drawing.Point(22, 331)
-        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView4.Location = New System.Drawing.Point(29, 407)
+        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView4.MultiSelect = False
         Me.DataGridView4.Name = "DataGridView4"
         Me.DataGridView4.ReadOnly = True
@@ -550,15 +561,15 @@ Partial Class Main
         Me.DataGridView4.RowTemplate.ReadOnly = True
         Me.DataGridView4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView4.Size = New System.Drawing.Size(721, 337)
+        Me.DataGridView4.Size = New System.Drawing.Size(961, 415)
         Me.DataGridView4.TabIndex = 8
         '
         'PictureBox14
         '
         Me.PictureBox14.BackColor = System.Drawing.Color.White
         Me.PictureBox14.Image = Global.КурсоваяБД.My.Resources.Resources.button_Удалить
-        Me.PictureBox14.Location = New System.Drawing.Point(496, 284)
-        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox14.Location = New System.Drawing.Point(661, 350)
+        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -569,8 +580,8 @@ Partial Class Main
         '
         Me.PictureBox13.BackColor = System.Drawing.Color.White
         Me.PictureBox13.Image = Global.КурсоваяБД.My.Resources.Resources.button_Изменить
-        Me.PictureBox13.Location = New System.Drawing.Point(362, 284)
-        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox13.Location = New System.Drawing.Point(483, 350)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -581,8 +592,8 @@ Partial Class Main
         '
         Me.PictureBox9.BackColor = System.Drawing.Color.White
         Me.PictureBox9.Image = Global.КурсоваяБД.My.Resources.Resources.Button_Добавить_2
-        Me.PictureBox9.Location = New System.Drawing.Point(229, 284)
-        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox9.Location = New System.Drawing.Point(305, 350)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -593,8 +604,8 @@ Partial Class Main
         '
         Me.PictureBox10.BackColor = System.Drawing.Color.White
         Me.PictureBox10.Image = Global.КурсоваяБД.My.Resources.Resources.button_Удалить
-        Me.PictureBox10.Location = New System.Drawing.Point(496, 26)
-        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox10.Location = New System.Drawing.Point(661, 32)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -630,8 +641,8 @@ Partial Class Main
         DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView3.DefaultCellStyle = DataGridViewCellStyle13
         Me.DataGridView3.GridColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.DataGridView3.Location = New System.Drawing.Point(22, 75)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView3.Location = New System.Drawing.Point(29, 92)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView3.MultiSelect = False
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.ReadOnly = True
@@ -651,15 +662,15 @@ Partial Class Main
         Me.DataGridView3.RowTemplate.ReadOnly = True
         Me.DataGridView3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView3.Size = New System.Drawing.Size(721, 185)
+        Me.DataGridView3.Size = New System.Drawing.Size(961, 228)
         Me.DataGridView3.TabIndex = 0
         '
         'PictureBox11
         '
         Me.PictureBox11.BackColor = System.Drawing.Color.White
         Me.PictureBox11.Image = Global.КурсоваяБД.My.Resources.Resources.button_Изменить
-        Me.PictureBox11.Location = New System.Drawing.Point(362, 26)
-        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox11.Location = New System.Drawing.Point(483, 32)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -670,8 +681,8 @@ Partial Class Main
         '
         Me.PictureBox12.BackColor = System.Drawing.Color.White
         Me.PictureBox12.Image = Global.КурсоваяБД.My.Resources.Resources.Button_Добавить_2
-        Me.PictureBox12.Location = New System.Drawing.Point(229, 26)
-        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox12.Location = New System.Drawing.Point(305, 32)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(124, 30)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -680,15 +691,15 @@ Partial Class Main
         '
         'Main
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(221, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1256, 831)
+        Me.ClientSize = New System.Drawing.Size(1675, 1023)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MinimizeBox = False
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -710,6 +721,7 @@ Partial Class Main
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -764,4 +776,5 @@ Partial Class Main
     Friend WithEvents PictureBox25 As PictureBox
     Friend WithEvents PictureBox24 As PictureBox
     Friend WithEvents PictureBox22 As PictureBox
+    Friend WithEvents Label1 As Label
 End Class

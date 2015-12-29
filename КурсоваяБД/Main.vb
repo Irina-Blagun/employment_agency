@@ -13,6 +13,8 @@
         Resumes = New Resumes(DataGridView4)
         Selection = New Selection(MainSelection.DataGridView1)
 
+        Label1.Text = "Вы вошли как, " & User._fullname
+
         Dim MeW As Integer = Me.Width / 2
         Dim MeH As Integer = Me.Height / 2
 

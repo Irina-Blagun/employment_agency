@@ -2,12 +2,13 @@
 Imports System.Data.SqlClient
 
 Public Module SQLControl
-    Dim Server As String = "IRINABLAGUN7D0D\SQLEXPRESS"
-    Dim Security As String = "SSPI"
+    Dim Server As String = "localhost\IlyaSuhodolskiy"
+    Dim Security As String = True
     Dim Database As String = "employment.agency"
-    Dim User As String = "IRINABLAGUN7D0D\Irina"
+    Dim User As String = "sa"
+    Dim Password As String = "saa"
 
-    Public SQLCon As New SqlConnection With {.ConnectionString = "Server='" & Server & "';Integrated Security='" & Security & "';Database='" & Database & "';User='" & User & "';"}
+    Public SQLCon As New SqlConnection With {.ConnectionString = "Server='" & Server & "';Integrated Security='" & Security & "';Database='" & Database & "';User='" & User & "';Password='" & Password & "'"}
 
     Public Function hasConecction() As Boolean
         Try

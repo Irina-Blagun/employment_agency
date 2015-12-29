@@ -23,13 +23,16 @@ Public Module User
                 _email = reader(1)
                 _fullname = reader(2)
                 _phone = reader(3)
+                Return True
+            Else
+                MsgBox("Неверный логин или пароль")
+                Return False
             End If
-            SQLControl.SQLCon.Close()
-            Return True
         Catch ex As Exception
-            SQLControl.SQLCon.Close()
             MsgBox(ex.Message)
             Return False
+        Finally
+            SQLControl.SQLCon.Close()
         End Try
     End Function
 

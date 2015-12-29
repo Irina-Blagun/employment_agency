@@ -25,7 +25,13 @@ Public Class BasicActions
     End Function
 
     Public Function getCellSelectedRow(Number As Integer) As String
-        Return Table.Rows(Table.CurrentCell.RowIndex).Cells(Number).Value.ToString()
+        Return Table.Rows(Table.CurrentCell.RowIndex).Cells(Number).Value
+    End Function
+
+    Public Function getCellSelectedRowByte(Number As Integer) As Byte()
+        If IsDBNull(Table.Rows(Table.CurrentCell.RowIndex).Cells(Number)) Then
+            Return Table.Rows(Table.CurrentCell.RowIndex).Cells(Number).Value
+        End If
     End Function
 
     Public Sub UpdateDataset()
@@ -60,4 +66,40 @@ Public Class BasicActions
             Me.UpdateDataset()
         End Try
     End Sub
+
+    Public Sub RunQueryWidthParametersAndUpdate(Query As String, ErrorMsg As String, Image() As Byte)
+        Try
+            SQLControl.SQLCon.Open()
+            SQLCmd = New SqlCommand(Query, SQLControl.SQLCon)
+
+            SQLCmd.Parameters.Add(New SqlParameter("@img", Image))
+
+            SQLCmd.ExecuteNonQuery()
+            SQLControl.SQLCon.Close()
+        Catch ex As Exception
+            SQLControl.SQLCon.Close()
+            MsgBox(ErrorMsg & "', ['" & ex.Message & "']'")
+        Finally
+            Me.UpdateDataset()
+        End Try
+    End Sub
+
+    Public Function CheckValueOfTheUniqueness(Query As String)
+        Try
+            SQLControl.SQLCon.Open()
+            SQLCmd = New SqlCommand(Query, SQLControl.SQLCon)
+            Dim reader As SqlDataReader = SQLCmd.ExecuteReader()
+
+            If reader.HasRows Then
+                Return False
+            Else
+                Return True
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            SQLControl.SQLCon.Close()
+        End Try
+    End Function
 End Class
