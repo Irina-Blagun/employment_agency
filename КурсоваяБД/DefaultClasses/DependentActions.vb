@@ -21,6 +21,7 @@ Public Class DependentActions
     End Sub
 
     Public Sub RenderDataset(Query As String)
+        MsgBox(Query)
         TableQueryLast = Query
 
         Try

@@ -3,6 +3,9 @@
         If User.Login(TextBox1.Text, TextBox2.Text) Then
             Main.Show()
             Me.Hide()
+        Else
+            TextBox1.Text = ""
+            TextBox2.Text = ""
         End If
     End Sub
 
