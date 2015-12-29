@@ -22,9 +22,4 @@ Public Class Seeker
         RunQueryAndUpdate(Query, "Ошибочка вышла")
     End Sub
 
-    Public Sub ResumeAdd(Office As String, Activity As String, Salary As String, Sex As String, Age As String, Education As String, Experience As String, Employment As String, Schedule As String, Social_package As String, Education_place As String, Workplace As String)
-        Dim Query As String = "INSERT INTO resume (id_seeker, re_office, re_activity, re_min_salary, re_sex, re_age, re_education, re_experience, re_employment, re_schedule, re_social_package, re_education_place, re_workplace) VALUES ('" & Me.getCellSelectedRow(0) & "', '" & Office & "','" & Activity & "', '" & Salary & "', '" & Sex & "', '" & Age & "', '" & Education & "', '" & Experience & "', '" & Employment & "', '" & Schedule & "', '" & Social_package & "', '" & Education_place & "', '" & Workplace & "')"
-        RunQueryAndUpdate(Query, "Просто жесть")
-    End Sub
-
 End Class

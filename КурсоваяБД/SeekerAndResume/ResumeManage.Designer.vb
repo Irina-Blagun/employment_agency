@@ -28,9 +28,7 @@ Partial Class ResumeManage
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -49,6 +47,8 @@ Partial Class ResumeManage
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -106,13 +106,6 @@ Partial Class ResumeManage
         Me.Label5.TabIndex = 62
         Me.Label5.Text = "Возраст"
         '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(370, 254)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(139, 22)
-        Me.TextBox2.TabIndex = 61
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -121,13 +114,6 @@ Partial Class ResumeManage
         Me.Label4.Size = New System.Drawing.Size(224, 17)
         Me.Label4.TabIndex = 60
         Me.Label4.Text = "Минимальная заработная плата"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(25, 254)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(310, 22)
-        Me.TextBox1.TabIndex = 59
         '
         'Label2
         '
@@ -289,12 +275,31 @@ Partial Class ResumeManage
         Me.TextBox5.Size = New System.Drawing.Size(310, 22)
         Me.TextBox5.TabIndex = 72
         '
+        'ComboBox7
+        '
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Items.AddRange(New Object() {"2000000 - 4000000"})
+        Me.ComboBox7.Location = New System.Drawing.Point(24, 254)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(310, 24)
+        Me.ComboBox7.TabIndex = 75
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Location = New System.Drawing.Point(371, 252)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(144, 24)
+        Me.ComboBox8.TabIndex = 77
+        '
         'ResumeManage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(713, 603)
+        Me.Controls.Add(Me.ComboBox8)
+        Me.Controls.Add(Me.ComboBox7)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label13)
@@ -307,9 +312,7 @@ Partial Class ResumeManage
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label6)
@@ -336,9 +339,7 @@ Partial Class ResumeManage
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
@@ -357,4 +358,6 @@ Partial Class ResumeManage
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents ComboBox8 As ComboBox
 End Class

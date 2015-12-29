@@ -166,9 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployerAndVacancy\VacancyManage.resx">
       <DependentUpon>VacancyManage.vb</DependentUpon>
@@ -211,58 +211,79 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Rectangle 1 + Войти.png" />
+    <None Include="Resources\Image2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Rectangle 1 + Войти1.png" />
+    <None Include="Resources\Image1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\АВТОРИЗАЦИЯ + Для сотрудников комп.png" />
+    <None Include="Resources\button_Войти.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\456.png" />
+    <None Include="Resources\button_Добавить.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\123.png" />
+    <None Include="Resources\button_Добавить_1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\add.png" />
+    <None Include="Resources\button_Изменить.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\add1.png" />
+    <None Include="Resources\button_Отправить.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\dfghj.png" />
+    <None Include="Resources\button_Подобрать.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\edit.png" />
+    <None Include="Resources\button_Поиск.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\edit1.png" />
+    <None Include="Resources\button_Удалить.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\delete.png" />
+    <None Include="Resources\icon_Работодатели_Вакансии.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\qwe.png" />
+    <None Include="Resources\icon_Соискатели_Резюме.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\search.png" />
+    <None Include="Resources\IWork_лого.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.png" />
+    <None Include="Resources\Авторизация.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo2.png" />
+    <None Include="Resources\Вакансии.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\СОИСКАТЕЛЬ + Соискать, резюме.png" />
+    <None Include="Resources\ВосстановлениеПароля.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\esfdghj.png" />
+    <None Include="Resources\Button_Добавить_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\trdfsh213.png" />
+    <None Include="Resources\button_Изменить_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ДОБАВЛЕНИЕ_РАБОТОДАТЛЯ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ДОБАВЛЕНИЕ_РАБОТОДАТЕЛЯ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ИЗМЕНЕНИЕ_РАБОТОДАТЕЛЯ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\РЕЗЮМЕ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок экрана 2015-12-27 в 22.26.45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\СОИСКАТЕЛИ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\РАБОТОДАТЕЛИ.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

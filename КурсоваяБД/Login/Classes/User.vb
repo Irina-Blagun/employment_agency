@@ -23,8 +23,6 @@ Public Module User
                 _email = reader(1)
                 _fullname = reader(2)
                 _phone = reader(3)
-
-                MsgBox("Успешно авторизировались")
             End If
             SQLControl.SQLCon.Close()
             Return True
